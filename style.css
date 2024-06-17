@@ -1,0 +1,852 @@
+/* Styles for Header */
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999ss;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* Styles for Logo */
+.logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 15px;
+  border: 5px;
+  
+}
+
+/* Styles for Navigation Menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Styles for Search Bar */
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #ff9900;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for Account/Login Options */
+.account-options a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/* Styles for Language/Currency Selector */
+.language-currency select {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+/* Styles for Cart Icon */
+.cart-icon img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.cart-count {
+  background-color: #ff9900;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+
+
+.navbar-secondary {
+  background-color: #131921; /* Dark background color */
+  height: 40px;
+  padding: 0 10px;
+
+}
+
+.navbar-secondary a {
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px; /* Larger font size */
+  
+}
+
+
+
+.promotional-banner {
+  position: relative;
+  background-image: url('images/banna2.jfif');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+  color: #ffffff; /* Text color */
+  z-index: 1;
+}
+
+.banner-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.banner-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-content .btn:hover {
+  background-color: #555555;
+}
+
+
+/* Basic styling for the featured section */
+.featured-section {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Styling for individual product cards */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #f44336;
+  margin-bottom: 10px;
+}
+
+.product-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: #f44336;
+}
+
+/* Additional styling for section headings */
+h2 {
+  margin-top: 60px;
+  font-size: 24px;
+  color: #333333;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+}
+
+
+
+/* Banner section styling */
+.deals-banner {
+  background-image: url('images/img/p2.jpg'); /* Replace with your actual banner image */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.deals-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-content .btn:hover {
+  background-color: #f44336;
+}
+
+
+
+
+/* Basic styling for the explore banner section */
+.explore-banner {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.explore-banner h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Styling for the explore content */
+.explore-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.explore-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  flex: 1;
+  text-align: left;
+  position: relative;
+}
+
+.explore-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.shaking-image {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.explore-text {
+  padding: 20px;
+}
+
+.explore-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.explore-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f44336;
+}
+
+
+
+
+
+
+/* CSS styles for Recommended for You section */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the recommended section */
+.recommended-section {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Styling for individual product cards */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #f44336;
+  margin-bottom: 10px;
+}
+
+.product-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: #f44336;
+}
+
+/* Additional styling for section headings */
+h2 {
+  margin-top: 60px;
+  font-size: 24px;
+  color: #333333;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+/* CSS styles for Health & Beauty | Top Picks section */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the health and beauty section */
+.health-beauty-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.health-beauty-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Styling for the product grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(25% - 20px); /* Adjust the width based on the number of products per row */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 10px;
+  color: #666;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  color: #ff5722;
+}
+
+.product-card .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: #f44336;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* CSS styles for Computing | Top Offers section */
+
+/* Reset default margin and padding */
+
+/* Basic styling for the computing section */
+.computing-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.computing-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Styling for the product grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(25% - 20px); /* Adjust the width based on the number of products per row */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 10px;
+  color: #666;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  color: #ff5722;
+}
+
+.product-card .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: #f44336;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* CSS styles for Fashion Offers | Top Picks section */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the fashion section */
+.fashion-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fashion-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Styling for the product grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(25% - 20px); /* Adjust the width based on the number of products per row */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 10px;
+  color: #666;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  color: #ff5722;
+}
+
+.product-card .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: #f44336;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.container footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Footer styles */
+footer {
+  background-color: #131921;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-top {
+  border-bottom: 1px solid #3c4858;
+  padding-bottom: 20px;
+  overflow: hidden; /* Clear float */
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-top .footer-section {
+  width: 25%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.footer-top .footer-section:last-child {
+  padding-right: 0;
+}
+
+.footer-top .footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-top .footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-top .footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-top .footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-top .footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #0f171f;
+  padding: 20px 0;
+  overflow: hidden; /* Clear float */
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .footer-section {
+  width: 20%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.footer-bottom .footer-section:last-child {
+  padding-right: 0;
+}
+
+.footer-bottom .footer-section h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom .footer-section p {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .footer-top .footer-section,
+  .footer-bottom .footer-section {
+      width: 50%;
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+}
+

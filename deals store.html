@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals Store</title>
+    <link rel="stylesheet" href="deals store.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/salmah shop 1.jfif" alt="salmah logo">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="Today's Deals.html">Today's Deals</a></li>
+                        <li><a href="Customer Service .html">Customer Service</a></li>
+                        <li><a href="#">Registry</a></li>
+                        <li><a href="Gift.html">Gift Cards</a></li>
+                        <li><a href="#">Sell</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search Deals">
+                    <button>Search</button>
+                </div>
+                <div class="account">
+                    <a href="sign in.html">Sign In</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="deals-main">
+        <!-- Deals Section -->
+        <section class="deals-section">
+            <div class="container">
+                <h1>Deals Store</h1>
+                <!-- Deals Categories -->
+                <div class="categories">
+                    <h2>Explore Deals by Category</h2>
+                    <ul>
+                        <li><a href="electronic.html">Electronics</a></li>
+                        <li><a href="#">Home & Kitchen</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Beauty & Personal Care</a></li>
+                        <li><a href="#">Toys & Games</a></li>
+                        <li><a href="book.html">Books</a></li>
+                        <li><a href="#">Sports & Outdoors</a></li>
+                        <li><a href="#">Automotive</a></li>
+                        <!-- Add more categories as needed -->
+                    </ul>
+                </div>
+                <!-- Featured Deals -->
+                <div class="featured-deals">
+                    <h2>Featured Deals</h2>
+                    <div class="deal-card">
+                        <img src="images/d1.jpg" alt="Deal Image">
+                        <h3>Product 1</h3>
+                        <p class="deal-description">Product description goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="deal-price">$99.99</p>
+                        <button class="view-details-btn" data-product-id="1">View Details</button>
+                    </div>
+                    <div class="deal-card">
+                        <img src="images/d6.jpg" alt="Deal Image">
+                        <h3>Product 2</h3>
+                        <p class="deal-description">Another product description. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="deal-price">$149.99</p>
+                        <button class="view-details-btn" data-product-id="2">View Details</button>
+                    </div>
+                    <div class="deal-card">
+                        <img src="images/d7.jpg" alt="Deal Image">
+                        <h3>Product 3</h3>
+                        <p class="deal-description">Another product description. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="deal-price">$149.99</p>
+                        <button class="view-details-btn" data-product-id="2">View Details</button>
+                    </div>
+                    <div class="deal-card">
+                        <img src="images/d8.jpg" alt="Deal Image">
+                        <h3>Product 4</h3>
+                        <p class="deal-description">Another product description. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="deal-price">$149.99</p>
+                        <button class="view-details-btn" data-product-id="2">View Details</button>
+                    </div>
+                    <div class="deal-card">
+                        <img src="images/d2.jpg" alt="Deal Image">
+                        <h3>Product 5</h3>
+                        <p class="deal-description">Another product description. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="deal-price">$149.99</p>
+                        <button class="view-details-btn" data-product-id="2">View Details</button>
+                    </div>
+                    <div class="deal-card">
+                        <img src="images/d3.jpg" alt="Deal Image">
+                        <h3>Product 6</h3>
+                        <p class="deal-description">Another product description. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="deal-price">$149.99</p>
+                        <button class="view-details-btn" data-product-id="2">View Details</button>
+                    </div>
+                    <div class="deal-card">
+                        <img src="images/d4.jpg" alt="Deal Image">
+                        <h3>Product 7</h3>
+                        <p class="deal-description">Another product description. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="deal-price">$149.99</p>
+                        <button class="view-details-btn" data-product-id="2">View Details</button>
+                    </div>
+                    
+                    <!-- Add more deal cards as needed -->
+                </div>
+
+                <!-- Modal for Product Details -->
+                <div id="productModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="modalTitle">Product Details</h2>
+                        <div id="modalBody">
+                            <p id="productDetails">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-section">
+                    <h3>Get to Know Us</h3>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Salmah</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Salmah Devices</a></li>
+                        <li><a href="#">Salmah Science</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Make Money with Us</h3>
+                    <ul>
+                        <li><a href="#">Sell products on Salmah</a></li>
+                        <li><a href="#">Sell on Salmah Business</a></li>
+                        <li><a href="#">Sell apps on Salmah</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Advertise Your Products</a></li>
+                        <li><a href="#">Self-Publish with Us</a></li>
+                        <li><a href="#">Host an Salmah Hub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Payment Products</h3>
+                    <ul>
+                        <li><a href="#">Salmah Business Card</a></li>
+                        <li><a href="#">Shop with Points</a></li>
+                        <li><a href="#">Reload Your Balance</a></li>
+                        <li><a href="#">Salmah Currency Converter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Let Us Help You</h3>
+                    <ul>
+                        <li><a href="#">Salmah and COVID-19</a></li>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Shipping Rates & Policies</a></li>
+                        <li><a href="#">Returns & Replacements</a></li>
+                        <li><a href="#">Manage Your Content and Devices</a></li>
+                        <li><a href="#">salmah Assistant</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-section">
+                    <h3>Salmah Music</h3>
+                    <p>Stream millions of songs</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Ads</h3>
+                    <p>Reach customers wherever they spend their time</p>
+                </div>
+                <div class="footer-section">
+                    <h3>6pm</h3>
+                    <p>Score deals on fashion brands</p>
+                </div>
+                <div class="footer-section">
+                    <h3>AbeBooks</h3>
+                    <p>Books, art & collectibles</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ACX</h3>
+                    <p>Audiobook Publishing Made Easy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sell on Salmah</h3>
+                    <p>Start a Selling Account</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Business</h3>
+                    <p>Everything For Your Business</p>
+                </div>
+                <div class="footer-section">
+                    <h3>SalmahGlobal</h3>
+                    <p>Ship Orders Internationally</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Home Services</h3>
+                    <p>Experienced Pros Happiness Guarantee</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Web Services</h3>
+                    <p>Scalable Cloud Computing Services</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Audible</h3>
+                    <p>Listen to Books & Original Audio Performances</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Box Office Mojo</h3>
+                    <p>Find Movie Box Office Data</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Goodreads</h3>
+                    <p>Book reviews & recommendations</p>
+                </div>
+                <div class="footer-section">
+                    <h3>IMDb</h3>
+                    <p>Movies, TV & Celebrities</p>
+                </div>
+                <div class="footer-section">
+                    <h3>IMDbPro</h3>
+                    <p>Get Info Entertainment Professionals Need</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kindle Direct Publishing</h3>
+                    <p>Indie Digital & Print Publishing Made Easy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Prime Video Direct</h3>
+                    <p>Video Distribution Made Easy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Shopbop</h3>
+                    <p>Designer Fashion Brands</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Woot!</h3>
+                    <p>Deals and Shenanigans</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Zappos</h3>
+                    <p>Shoes & Clothing</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ring</h3>
+                    <p>Smart Home Security Systems</p>
+                </div>
+                <div class="footer-section">
+                    <h3>eero WiFi</h3>
+                    <p>Stream 4K Video in Every Room</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Blink</h3>
+                    <p>Smart Security for Every Home</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Neighbors App</h3>
+                    <p>Real-Time Crime & Safety Alerts</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Subscription Boxes</h3>
+                    <p>Top subscription boxes – right to your door</p>
+                </div>
+                <div class="footer-section">
+                    <h3>PillPack</h3>
+                    <p>Pharmacy Simplified</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="deals store.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Salmah</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- Leaflet CSS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-details">
+        <div class="container">
+            <h2>Contact Details</h2>
+            <p><strong>Salmah</strong></p>
+            <p><strong>Email:</strong> contact@salmah.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> Silicon Valley, CA 94035, USA</p>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-section">
+                    <h3>Get to Know Us</h3>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Salmah</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Salmah Devices</a></li>
+                        <li><a href="#">Salmah Science</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Make Money with Us</h3>
+                    <ul>
+                        <li><a href="#">Sell products on Salmah</a></li>
+                        <li><a href="#">Sell on Salmah Business</a></li>
+                        <li><a href="#">Sell apps on Salmah</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Advertise Your Products</a></li>
+                        <li><a href="#">Self-Publish with Us</a></li>
+                        <li><a href="#">Host an Salmah Hub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Payment Products</h3>
+                    <ul>
+                        <li><a href="#">Salmah Business Card</a></li>
+                        <li><a href="#">Shop with Points</a></li>
+                        <li><a href="#">Reload Your Balance</a></li>
+                        <li><a href="#">Salmah Currency Converter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Let Us Help You</h3>
+                    <ul>
+                        <li><a href="#">Salmah and COVID-19</a></li>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Shipping Rates & Policies</a></li>
+                        <li><a href="#">Returns & Replacements</a></li>
+                        <li><a href="#">Manage Your Content and Devices</a></li>
+                        <li><a href="#">salmah Assistant</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-section">
+                    <h3>Salmah Music</h3>
+                    <p>Stream millions of songs</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Ads</h3>
+                    <p>Reach customers wherever they spend their time</p>
+                </div>
+                <div class="footer-section">
+                    <h3>6pm</h3>
+                    <p>Score deals on fashion brands</p>
+                </div>
+                <div class="footer-section">
+                    <h3>AbeBooks</h3>
+                    <p>Books, art & collectibles</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ACX</h3>
+                    <p>Audiobook Publishing Made Easy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sell on Salmah</h3>
+                    <p>Start a Selling Account</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Business</h3>
+                    <p>Everything For Your Business</p>
+                </div>
+                <div class="footer-section">
+                    <h3>SalmahGlobal</h3>
+                    <p>Ship Orders Internationally</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Home Services</h3>
+                    <p>Experienced Pros Happiness Guarantee</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Web Services</h3>
+                    <p>Scalable Cloud Computing Services</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Audible</h3>
+                    <p>Listen to Books & Original Audio Performances</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Box Office Mojo</h3>
+                    <p>Find Movie Box Office Data</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Goodreads</h3>
+                    <p>Book reviews & recommendations</p>
+                </div>
+                <div class="footer-section">
+                    <h3>IMDb</h3>
+                    <p>Movies, TV & Celebrities</p>
+                </div>
+                <div class="footer-section">
+                    <h3>IMDbPro</h3>
+                    <p>Get Info Entertainment Professionals Need</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kindle Direct Publishing</h3>
+                    <p>Indie Digital & Print Publishing Made Easy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Prime Video Direct</h3>
+                    <p>Video Distribution Made Easy</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Shopbop</h3>
+                    <p>Designer Fashion Brands</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Woot!</h3>
+                    <p>Deals and Shenanigans</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Zappos</h3>
+                    <p>Shoes & Clothing</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ring</h3>
+                    <p>Smart Home Security Systems</p>
+                </div>
+                <div class="footer-section">
+                    <h3>eero WiFi</h3>
+                    <p>Stream 4K Video in Every Room</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Blink</h3>
+                    <p>Smart Security for Every Home</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Neighbors App</h3>
+                    <p>Real-Time Crime & Safety Alerts</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Salmah Subscription Boxes</h3>
+                    <p>Top subscription boxes – right to your door</p>
+                </div>
+                <div class="footer-section">
+                    <h3>PillPack</h3>
+                    <p>Pharmacy Simplified</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Leaflet JavaScript for map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

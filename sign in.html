@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="sing in.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Sign-In</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email or mobile phone number</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="login-btn">Continue</button>
+            </form>
+            <p>By continuing, you agree to Salmah's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+            <button class="social-btn google-btn">Sign in with Google</button>
+            <button class="social-btn facebook-btn">Sign in with Facebook</button>
+            <div class="divider"></div>
+            <div class="new-to-salmah">
+                <h2>New to Salmah?</h2>
+                <button class="create-account-btn">Create your Salmah account</button>
+            </div>
+            <a href="#" class="forgot-password">Forgot your password?</a>
+        </div> v 
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+
+            if (email) {
+                alert('Email submitted: ' + email);
+                // Here you would typically send the form data to the server
+            } else {
+                alert('Please enter your email.');
+            }
+        });
+
+        // Add event listeners for social buttons if needed
+        document.querySelector('.google-btn').addEventListener('click', function() {
+            alert('Google sign-in clicked');
+            // Implement Google sign-in logic
+        });
+
+        document.querySelector('.facebook-btn').addEventListener('click', function() {
+            alert('Facebook sign-in clicked');
+            // Implement Facebook sign-in logic
+        });
+
+        document.querySelector('.create-account-btn').addEventListener('click', function() {
+            alert('Create account clicked');
+            // Redirect to account creation page
+        }); 
+
+        document.querySelector('.forgot-password').addEventListener('click', function() {
+            alert('Forgot password clicked');
+            // Redirect to password recovery page
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #232f3e;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #ff9900;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+nav.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav.menu ul li {
+    margin-right: 10px;
+}
+
+nav.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero {
+    background-color: #ff9900;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.categories {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.books {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+.books h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.book-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.container footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #131921;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-top {
+    border-bottom: 1px solid #3c4858;
+    padding-bottom: 20px;
+    overflow: hidden; /* Clear float */
+  }
+  
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-top .footer-section {
+    width: 25%;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-top .footer-section:last-child {
+    padding-right: 0;
+  }
+  
+  .footer-top .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-top .footer-section ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-top .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-top .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-top .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    background-color: #0f171f;
+    padding: 20px 0;
+    overflow: hidden; /* Clear float */
+  }
+  
+  .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom .footer-section {
+    width: 20%;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-bottom .footer-section:last-child {
+    padding-right: 0;
+  }
+  
+  .footer-bottom .footer-section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom .footer-section p {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-top .footer-section,
+    .footer-bottom .footer-section {
+        width: 50%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+  }
+  
+  

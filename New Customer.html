@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Customer - Start Here</title>
+    <link rel="stylesheet" href="New Customer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#start-here" class="highlight">Start Here</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="start-here">
+            <h1>Welcome New Customers!</h1>
+            <p>We're excited to have you here. Let's get started with a few quick steps:</p>
+            <div class="steps">
+                <div class="step">
+                    <h2>Step 1</h2>
+                    <p>Create your account and set up your profile.</p>
+                    <button onclick="showModal('step1')">Learn More</button>
+                </div>
+                <div class="step">
+                    <h2>Step 2</h2>
+                    <p>Explore our services and find what suits you best.</p>
+                    <button onclick="showModal('step2')">Learn More</button>
+                </div>
+                <div class="step">
+                    <h2>Step 3</h2>
+                    <p>Start using our services and enjoy the benefits!</p>
+                    <button onclick="showModal('step3')">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="New Customer.js"></script>
+</body>
+</html>

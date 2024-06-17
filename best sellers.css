@@ -1,0 +1,251 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav .menu li {
+    margin-right: 20px;
+}
+
+header nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    background-color: #4d5a6b;
+    border-radius: 20px;
+    padding: 5px 10px;
+    max-width: 300px;
+}
+
+header .search input[type="text"] {
+    border: none;
+    background: none;
+    padding: 5px;
+    color: white;
+    width: 100%;
+}
+
+header .search button {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+#categories {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.category {
+    text-align: center;
+}
+
+.category a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.category img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.category span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#products {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-section {
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h4 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.container footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #131921;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-top {
+    border-bottom: 1px solid #3c4858;
+    padding-bottom: 20px;
+    overflow: hidden; /* Clear float */
+  }
+  
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-top .footer-section {
+    width: 25%;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-top .footer-section:last-child {
+    padding-right: 0;
+  }
+  
+  .footer-top .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-top .footer-section ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-top .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-top .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-top .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    background-color: #0f171f;
+    padding: 20px 0;
+    overflow: hidden; /* Clear float */
+  }
+  
+  .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom .footer-section {
+    width: 20%;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-bottom .footer-section:last-child {
+    padding-right: 0;
+  }
+  
+  .footer-bottom .footer-section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom .footer-section p {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-top .footer-section,
+    .footer-bottom .footer-section {
+        width: 50%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+  }
+  
+  

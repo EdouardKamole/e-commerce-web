@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your List</title>
+    <link rel="stylesheet" href="Your Lists.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.css">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#your-list" class="highlight">Your List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="your-list">
+            <h1>Your List</h1>
+            <div class="list-container">
+                <input type="text" id="item-input" placeholder="Add a new item..." />
+                <button onclick="addItem()">Add</button>
+                <ul id="item-list"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="Your Lists.js"></script>
+</body>
+</html>
